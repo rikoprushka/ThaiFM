@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with Footer Button</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3490dc',
+                        secondary: '#ffed4a',
+                        danger: '#e3342f',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+    <header class="bg-primary text-white p-4">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold">My Website</h1>
+        </div>
+    </header>
+
+    <nav class="bg-gray-200 p-4">
+        <div class="container mx-auto">
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-primary hover:text-primary-dark">Home</a></li>
+                <li><a href="#" class="text-primary hover:text-primary-dark">About</a></li>
+                <li><a href="#" class="text-primary hover:text-primary-dark">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-4">Welcome to My Website</h2>
+        <p class="mb-4">This is a sample page with some content. You can replace this with your own content.</p>
+        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-2">Featured Content</h3>
+            <p>This could be a special announcement, featured article, or any other important content you want to highlight.</p>
+        </div>
+    </main>
+
+    <footer class="bg-gray-200 py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+            <a href="index.html" class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                กลับสู่หน้าแรก
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

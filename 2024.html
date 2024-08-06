@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="th" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThaiFM2024-RikoPrushka: ภาษาไทยสำหรับ Football Manager 2024</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans Thai"', 'sans-serif'],
+                    },
+                    animation: {
+                        'gradient': 'gradient 15s ease infinite',
+                        'ping-once': 'ping 0.5s cubic-bezier(0, 0, 0.2, 1) 1',
+                        'scroll-left': 'scroll-left 60s linear infinite',
+                        'scroll-right': 'scroll-right 60s linear infinite',
+                    },
+                    keyframes: {
+                        'gradient': {
+                            '0%, 100%': { 'background-position': '0% 50%' },
+                            '50%': { 'background-position': '100% 50%' },
+                        },
+                        'ping': {
+                            '75%, 100%': {
+                                transform: 'scale(1.2)',
+                                opacity: '0',
+                            },
+                        },
+                        'scroll-left': {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        },
+                        'scroll-right': {
+                            '0%': { transform: 'translateX(-50%)' },
+                            '100%': { transform: 'translateX(0)' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
+        .animated-gradient {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .text-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+            opacity: 0.05;
+            pointer-events: none;
+        }
+        .text-line {
+            font-size: 10rem;
+            font-weight: bold;
+            white-space: nowrap;
+            line-height: 10rem;
+            display: flex;
+        }
+        .text-line span {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 animated-gradient min-h-screen">
+    <div class="text-overlay">
+        <div class="text-line animate-scroll-left">
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+        </div>
+        <div class="text-line animate-scroll-right">
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+        </div>
+        <div class="text-line animate-scroll-left">
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+        </div>
+        <div class="text-line animate-scroll-right">
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+        </div>
+        <div class="text-line animate-scroll-left">
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+        </div>
+        <div class="text-line animate-scroll-right">
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+        </div>
+        <div class="text-line animate-scroll-left">
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+        </div>
+        <div class="text-line animate-scroll-right">
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+            <span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span><span>RikoPrushka</span>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 py-8 bg-gray-900 bg-opacity-80 relative z-10">
+        <div class="absolute top-4 left-4">
+            <a href="index.html" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                กลับสู่หน้าแรก
+            </a>
+        </div>
+        <h1 class="text-4xl font-bold mb-6 text-center">ThaiFM2024-RikoPrushka</h1>
+        <h2 class="text-3xl font-semibold mb-4 text-center">ภาษาไทยสำหรับ Football Manager 2024</h2>
+
+        <img src="https://i.imgur.com/perHVzq.png" alt="ภาษาไทยสำหรับ Football Manager 2024" class="mb-6 rounded-lg shadow-md mx-auto">
+
+        <h2 class="text-2xl font-bold mb-4 text-center">วิธีการติดตั้งภาษาไทยสำหรับ Football Manager 2024</h2>
+
+        <p class="mb-4">
+            ดาวน์โหลดไฟล์ <a href="https://github.com/rikoprushka/ThaiFM2024-RikoPrushka/releases/download/15.04.24/ThaiFM2024RikoPrushkaInstallerFull.exe" class="text-blue-400 hover:text-blue-300 underline">ThaiFM2024RikoPrushkaInstallerFull.exe</a> เพื่อติดตั้งคำแปลและฟอนต์ภาษาไทย
+        </p>
+
+        <p class="mb-2">แตกไฟล์ที่</p>
+        <div class="relative">
+            <pre class="bg-gray-700 p-2 rounded mb-4"><code id="path1">C:\Users\%USERNAME%\Documents\Sports Interactive\Football Manager 2024\</code></pre>
+            <button onclick="copyToClipboard('path1', this)" class="absolute top-2 right-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Copy</button>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-2 text-center">หากฟอนต์ไม่แสดงผล</h3>
+        <p class="mb-2">ให้ตรวจสอบดูว่าในโฟลเดอร์</p>
+        <div class="relative">
+            <pre class="bg-gray-700 p-2 rounded mb-2"><code id="path2">C:\Users\%USERNAME%\Documents\Sports Interactive\Football Manager 2024\</code></pre>
+            <button onclick="copyToClipboard('path2', this)" class="absolute top-2 right-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Copy</button>
+        </div>
+        <p class="mb-4">มีโฟลเดอร์ <code class="bg-gray-700 p-1 rounded">fonts</code> อยู่หรือไม่ หากมีให้ลบโฟลเดอร์ <code class="bg-gray-700 p-1 rounded">fonts</code></p>
+        <p class="mb-2">จากนั้นให้เข้าไปที่</p>
+        <div class="relative">
+            <pre class="bg-gray-700 p-2 rounded mb-2"><code id="path3">%localappdata%\sports interactive\football manager 2024\caches</code></pre>
+            <button onclick="copyToClipboard('path3', this)" class="absolute top-2 right-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Copy</button>
+        </div>
+        <p class="mb-4">แล้วลบไฟล์ที่มีนามสกุล <code class="bg-gray-700 p-1 rounded">.skc</code> เพื่อลบแคชของสกิน</p>
+
+        <h4 class="text-lg font-semibold mb-2 text-center">สำหรับผู้ใช้ MAC</h4>
+        <p class="mb-2">ดาวน์โหลดไฟล์คำแปล <code class="bg-gray-700 p-1 rounded">ThaiFM2024RikoPrushka.ltc</code> จากนั้นคัดลอกไฟล์ไปวางที่</p>
+        <div class="relative">
+            <pre class="bg-gray-700 p-2 rounded mb-4"><code id="path4">$HOME/Library/Application Support/Sports Interactive/Football Manager 2024/languages</code></pre>
+            <button onclick="copyToClipboard('path4', this)" class="absolute top-2 right-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Copy</button>
+        </div>
+        <p class="mb-2">ดาวน์โหลดไฟล์ฟอนต์ <code class="bg-gray-700 p-1 rounded">fonts.fmf</code> จาก <a href="https://github.com/rikoprushka/ThaiFMFonts/releases/download/fmf/fonts.fmf" class="text-blue-400 hover:text-blue-300">GitHub</a> จากนั้นคัดลอกไฟล์ไปวางที่</p>
+        <div class="relative">
+            <pre class="bg-gray-700 p-2 rounded mb-4"><code id="path5">$HOME/Library/Application Support/Sports Interactive/Football Manager 2024/</code></pre>
+            <button onclick="copyToClipboard('path5', this)" class="absolute top-2 right-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded text-sm transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Copy</button>
+        </div>
+
+        <div class="flex flex-wrap gap-2 mt-6 justify-center">
+            <img src="https://img.shields.io/github/downloads/rikoprushka/ThaiFM2024-RikoPrushka/ThaiFM2024RikoPrushkaInstallerFull.exe" alt="GitHub Downloads (Installer)" class="h-6">
+            <img src="https://img.shields.io/github/downloads/rikoprushka/ThaiFM2024-RikoPrushka/ThaiFM2024RikoPrushka.ltc" alt="GitHub Downloads (LTC file)" class="h-6">
+            <img src="https://img.shields.io/steam/subscriptions/3074556340?style=flat&logo=steam&label=Current%20Subscribers&labelColor=1b2838&color=5784b0" alt="Steam Subscriptions" class="h-6">
+        </div>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-2 text-center">หากใช้งานแล้วชื่นชอบและอยากสนับสนุน</h3>
+        <p class="mb-4 text-center">สามารถโดเนทเพื่อเป็นกำลังใจให้ผู้พัฒนาผ่านพร้อมเพย์ได้ทาง <a href="https://tipme.in.th/rikoprushka" class="text-blue-400 hover:text-blue-300">Tipme</a></p>
+        <p class="mb-4 text-center">ขอบคุณสำหรับทุกการสนับสนุน</p>
+
+        <h4 class="text-xl font-semibold mb-2 text-center">หากมีข้อติชม มีข้อสงสัย หรือพบปัญหาในการใช้งาน สามารถติดต่อผู้พัฒนาได้ทาง<a href="https://www.facebook.com/messages/t/100000119672904" class="text-blue-400 hover:text-blue-300">ข้อความ Facebook</a></h4>
+
+
+    <a href="index.html" class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+        กลับสู่หน้าแรก
+    </a>
+
+</div>
+
+
+    <script>
+        function copyToClipboard(elementId, button) {
+            const el = document.getElementById(elementId);
+            const text = el.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                button.classList.remove('bg-blue-500', 'hover:bg-blue-600');
+                button.classList.add('bg-green-500', 'animate-ping-once');
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('bg-green-500', 'animate-ping-once');
+                    button.classList.add('bg-blue-500', 'hover:bg-blue-600');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เร็ว ๆ นี้</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .animated-bg {
+            background: linear-gradient(45deg, #0a0f14, #1a1e24, #2a2e34, #1a1e24, #0a0f14);
+            background-size: 300% 300%;
+            animation: gradient 15s ease infinite;
+        }
+        body {
+            font-family: 'Noto Sans Thai', sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center animated-bg text-white p-4">
+    <div class="absolute top-4 left-4 z-10">
+        <a href="index.html" class="bg-gray-800 text-white font-bold py-2 px-4 rounded-full hover:bg-gray-700 transition duration-300 text-sm sm:text-base">
+            &#8592; กลับ
+        </a>
+    </div>
+    <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-center mb-8 transition-all duration-300">
+        เร็ว ๆ นี้
+    </h1>
+</body>
+</html>
