@@ -1,21 +1,9 @@
 {
-  "schedule": "daily",
-  "prTitle": "Optimize images",
-  "prBody": "This PR optimizes the images in the repository using ImgBot",
-  "commitMessage": "Optimize images",
-  "ignoredFiles": [
-    "*.md",
-    "*.svg"
-  ],
-  "quality": 75,
-  "maxFileSize": 5000000,
-  "exclusions": [
-    "/path/to/exclude/*"
-  ],
-  "resizeOriginals": false,
-  "resizeWidths": [
-    800,
-    1200,
-    1600
-  ]
-}
+    "schedule": "daily",
+    "compressionLevel": "lossless",
+    "ignoredFiles": [
+      "*.svg",
+      "docs/images/*"
+    ],
+    "minKBReduced": 10
+  }
