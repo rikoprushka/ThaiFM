@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Glassmorphism FAQ Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl font-extrabold text-white text-center mb-12 shadow-sm">
+            Frequently Asked Questions
+        </h1>
+        <div class="space-y-6">
+            <div class="glass p-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-2">What is your return policy?</h2>
+                <p class="text-gray-700">We offer a 30-day return policy for all unused items in their original packaging. If you're not satisfied with your purchase, please contact our customer service team to initiate the return process.</p>
+            </div>
+
+            <div class="glass p-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-2">How long does shipping take?</h2>
+                <p class="text-gray-700">Shipping typically takes 3-5 business days for domestic orders and 7-14 business days for international orders. Please note that these are estimates and actual delivery times may vary depending on your location.</p>
+            </div>
+
+            <div class="glass p-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-2">Do you offer international shipping?</h2>
+                <p class="text-gray-700">Yes, we ship to most countries worldwide. Shipping costs and delivery times may vary depending on the destination. You can see the exact shipping costs during the checkout process after entering your address.</p>
+            </div>
+
+            <div class="glass p-6">
+                <h2 class="text-xl font-semibold text-gray-800 mb-2">How can I track my order?</h2>
+                <p class="text-gray-700">Once your order has been shipped, you will receive a tracking number via email. You can use this number to track your package on our website or the carrier's site. Simply enter the tracking number in the designated field to get real-time updates on your package's location.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
